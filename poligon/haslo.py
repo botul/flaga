@@ -16,7 +16,8 @@ rand_digit = random.sample(digits, n_type)
 rand_punctuation = random.sample(punctuation, n_type)
 
 rand_all = rand_lower + rand_upper + rand_digit + rand_punctuation 
-passwd = ''.join(rand_all)
+passwd = ''.join(random.sample(rand_all, len(rand_all)))
+
 
 print()
 print(passwd)
