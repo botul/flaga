@@ -15,6 +15,10 @@ def xd():
 @app.route('/kubus_puchatek')
 def kubus_puchatek():
     return render_template("kubus_puchatek.html")
+
+@app.route('/pwd')
+def pwd():
+    return render_template("pwd.html", pas=passw)
     
 if __name__=="__main__":
     app.run()
