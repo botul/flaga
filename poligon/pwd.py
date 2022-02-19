@@ -18,6 +18,7 @@ def kubus_puchatek():
 
 @app.route('/pwd')
 def pwd():
+    pas=passwd
     return render_template("pwd.html")
 
 if __name__=="__main__":
